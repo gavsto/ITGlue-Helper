@@ -1,6 +1,20 @@
 # IT Glue Helper
 The primary purpose of this repository is to serve as a general place for any helper functions I write to interact with the IT Glue API via Powershell
 
+# IT Glue BootStrap Panel Generator
+This is two helper functions that can be used in your IT Glue scripts to generate pretty panels in Flexible Assets. I use this in combination with the Manage API
+at https://github.com/christaylorcodes/ConnectWiseManageAPI to Auto document the services we have so our engineers have one page to visually see what services
+our client has. You can see a redacted version of what this looks like in IT Glue here: https://i.imgur.com/DKm1aM8.png. We also tie in to 365 with the same script
+and bring back things like 2FA stats and active e-mail domains.
+
+You only need to take the functions away from this module. Everything past Line 147 is just code to generate a test HTML to show how the solution works.
+It will generate a HTML file on your desktop that gives a rough idea of what it looks like in the Flexible Asset.
+
+The code in this module does not cover generating the flexible asset. Please see https://github.com/itglue/powershellwrapper
+
+See https://www.cyberdrain.com/ for examples on how to interact with the IT Glue API.
+
+
 # Generic IT Glue Flexible Asset Generator
 Requirements: "Install-Module ITGlueAPI"
 
